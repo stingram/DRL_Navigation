@@ -36,15 +36,42 @@ This project implements a *Value Based* method called [Deep Q-Networks](https://
 
 Deep Q Learning combines two approaches :
 - A Reinforcement Learning method called [Q Learning](https://en.wikipedia.org/wiki/Q-learning)
-- A Deep Neural Network to learn a Q-table approximation (action-values)
+- Q-table approximation (action-values) using a Deep Neural Network 
 
 This implementation includes two training improvements described in their [Nature publication : "Human-level control through deep reinforcement learning (2015)"](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
 - Experience Replay 
 - Fixed Q Targets
 
-> Reinforcement learning is known to be unstable or even to diverge when a nonlinear function approximator such as a neural network is used to represent the action-value (also known as Q) function20. This instability has several causes: the correlations present in the sequence of observations, the fact that small updates to Q may significantly change the policy and therefore change the data distribution, and the correlations
-between the action-values and the target values .
-We address these instabilities with a novel variant of Q-learning, which uses two key ideas. First, we used a biologically inspired mechanism termed experience replay that randomizes over the data, thereby removing correlations in the observation sequence and smoothing over changes in the data distribution. Second, we used an iterative update that adjusts the action-values towards target values that are only periodically updated, thereby reducing correlations with the target.
+> ABSTRACT: The theory of reinforcement learning provides a normative account1,
+deeply rooted in psychological<sup>2</sup> and neuroscientific<sup>3</sup> perspectives on
+animal behaviour, of how agents may optimize their control of an
+environment.To use reinforcement learning successfully in situations
+approaching real-world complexity, however, agents are confronted
+with a difficult task: they must derive efficient representations of the
+environment from high-dimensional sensory inputs, and use these
+to generalize past experience to new situations.Remarkably, humans
+and other animals seem to solve this problem through a harmonious
+combination of reinforcement learning and hierarchical sensory processing
+systems<sup>4,5</sup>, the former evidenced by a wealth of neural data
+revealing notable parallels betweenthe phasic signals emitted by dopaminergic
+neurons and temporal difference reinforcement learning
+algorithms<sup>3</sup>.While reinforcement learning agents have achieved some
+successes in a variety of domains<sup>6–8</sup>, their applicability has previously
+been limited to domains inwhich useful features can be handcrafted,
+or to domains with fully observed, low-dimensional state spaces.
+Here we use recent advances in training deep neural networks<sup>9–11</sup> to
+develop a novel artificial agent, termed a deep Q-network, that can
+learn successful policies directly fromhigh-dimensional sensory inputs
+using end-to-end reinforcement learning. We tested this agent on
+the challenging domain of classic Atari 2600 games<sup>12</sup>. We demonstrate
+that the deep Q-network agent, receiving only the pixels and
+the game score as inputs, was able to surpass the performance of all
+previous algorithms and achieve a level comparable to that of a professional
+human games tester across a set of 49 games, using the same
+algorithm, network architecture and hyperparameters. This work
+bridges the divide between high-dimensional sensory inputs and
+actions, resulting in the first artificial agent that is capable of learning
+to excel at a diverse array of challenging tasks.
 
 ### Algorithm
 
