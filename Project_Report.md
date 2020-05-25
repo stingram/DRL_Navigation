@@ -2,13 +2,13 @@
 
 ## Project Objective
 
-In this project, **the objective is to train an agent to navigate a virtual world while collecting as many yellow bananas as possible, while avoiding any blue bananas**
+In this project, **the objective is to train an agent to navigate a virtual world while collecting as many yellow bananas as possible, while avoiding any blue bananas.**
 
 ![In Project 1, train an agent to navigate a large world, square world.](images/bananas.gif)
 
 ## Environment details
 
-The environment is based on [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents)
+The environment is based on [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents).
 
 Note: The project environment provided by Udacity is similar to, but not identical to the Banana Collector environment on the Unity ML-Agents GitHub page.
 
@@ -34,28 +34,28 @@ The task is episodic, and **in order to solve the environment, the agent must ge
 
 This project implements a *Value Based* method called [Deep Q-Networks](https://deepmind.com/research/dqn/). 
 
-Deep Q Learning combines two approaches :
+Deep Q Learning combines two approaches:
 - A Reinforcement Learning method called [Q Learning](https://en.wikipedia.org/wiki/Q-learning)
 - Q-table approximation (action-values) using a Deep Neural Network 
 
-This implementation includes two training improvements described in their [Nature publication : "Human-level control through deep reinforcement learning (2015)"](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+This implementation includes two training improvements described in their [Nature publication : "Human-level control through deep reinforcement learning (2015)"](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf).
 - Experience Replay 
 - Fixed Q Targets
 
-> ABSTRACT: The theory of reinforcement learning provides a normative account1,
+> ABSTRACT: The theory of reinforcement learning provides a normative account<sup>1</sup>,
 deeply rooted in psychological<sup>2</sup> and neuroscientific<sup>3</sup> perspectives on
 animal behaviour, of how agents may optimize their control of an
-environment.To use reinforcement learning successfully in situations
+environment. To use reinforcement learning successfully in situations
 approaching real-world complexity, however, agents are confronted
 with a difficult task: they must derive efficient representations of the
 environment from high-dimensional sensory inputs, and use these
-to generalize past experience to new situations.Remarkably, humans
+to generalize past experience to new situations. Remarkably, humans
 and other animals seem to solve this problem through a harmonious
 combination of reinforcement learning and hierarchical sensory processing
 systems<sup>4,5</sup>, the former evidenced by a wealth of neural data
 revealing notable parallels betweenthe phasic signals emitted by dopaminergic
 neurons and temporal difference reinforcement learning
-algorithms<sup>3</sup>.While reinforcement learning agents have achieved some
+algorithms<sup>3</sup>. While reinforcement learning agents have achieved some
 successes in a variety of domains<sup>6–8</sup>, their applicability has previously
 been limited to domains inwhich useful features can be handcrafted,
 or to domains with fully observed, low-dimensional state spaces.
@@ -77,7 +77,7 @@ to excel at a diverse array of challenging tasks.
 
 ![Deep Q-Learning algorithm from Udacity](images/dqn_algorithm.PNG)
 
-This algorithm screenshot is taken from the [Deep Reinforcement Learning Nanodegree course](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893)
+This algorithm screenshot is taken from the [Deep Reinforcement Learning Nanodegree course](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
 
 
 ### Code implementation
@@ -95,7 +95,7 @@ Relevant files include:
   
 - model.py : This file defines a PyTorch QNetwork class. The network is fully connected Deep Neural Network using the [PyTorch Framework](https://pytorch.org/docs/0.4.0/). This network is trained to predict the action to perform depending on the environment observed states. This Neural Network is used by the DQN agent and is composed of:
   - the input layer, its size is equal to the state_size parameter passed into the constructor
-  - 2 hidden fully connected layers, one with 128 cells and the second with 64 cells
+  - Two hidden fully connected layers, one with 128 cells and the second with 64 cells
   - the output layer which size is set to the action_size parameter passed in the constructor
   
 - dqn_agent.py : This file defines a DQN agent and a Replay Buffer memory used by the DQN agent.
@@ -159,4 +159,4 @@ Further augmentations could also be implemented to increase the performance of t
 
 ### Training Hardware Configuration 
 
-This agent has been trained on the Udacity provided online workspace. This environment provides an Nvidia K80 GPU for training. The Unity environment with visualization was used during training.
+This agent has been trained on the Udacity provided online workspace. This environment provides an Nvidia K80 GPU for training. The Unity environment without visualization was used during training.
