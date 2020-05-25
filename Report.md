@@ -102,10 +102,10 @@ Relevant files include:
   - The DQN agent class is implemented, as described in the Deep Q-Learning algorithm. It provides several methods :
     - constructor: 
       - Initialize the memory buffer (*Replay Buffer*)
-      - Initialize two instance of the neural network defined in model.py : the *target* network and the *local* network
+      - Initialize two instances of the neural network defined in model.py : the *target* network and the *local* network
     - step function: 
       - Allows to store a step taken by the agent (state, action, reward, next_state, done) in the Replay Buffer/Memory
-      - Every 4 steps (and given enough samples available in the Replay Buffer), update the *target* network weights with the current weight values from the *local* network
+      - Every 4 steps (and given enough samples in the Replay Buffer), update the *target* network weights with the current weight values from the *local* network
     - act function: returns actions for the given state given under by the current policy. Action selection is done with Epsilon-greedy selection.
     - learn function: updates the *local* network parameters using a given batch of experiences from the replay buffer. 
     - soft_update function is called by learn() to update the *target* neural network parameters from the *local* network weights
