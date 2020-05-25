@@ -75,7 +75,7 @@ to excel at a diverse array of challenging tasks.
 
 ### Algorithm
 
-![Deep Q-Learning algorithm from Udacity course](./images/DQN.png)
+![Deep Q-Learning algorithm from Udacity](images/dqn_algorithm.PNG)
 
 This algorithm screenshot is taken from the [Deep Reinforcement Learning Nanodegree course](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893)
 
