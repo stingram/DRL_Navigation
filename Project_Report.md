@@ -135,7 +135,7 @@ Input nodes (37) -> Fully Connected Layer (128 nodes, Relu activation) -> Fully 
 
 The networks use Adam optimization with a learning rate of LR=5e-4 and are trained using a BATCH_SIZE=64.
 
-With the given the chosen architecture and parameters, the results are :
+With the given architecture and parameters, the training logs and results are shown below:
 
 ![Training logs](images/training.PNG)
 
