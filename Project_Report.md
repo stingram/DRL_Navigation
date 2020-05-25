@@ -137,9 +137,9 @@ The networks use Adam optimization with a learning rate of LR=5e-4 and are train
 
 With the given the chosen architecture and parameters, the results are :
 
-![Training logs](./images/training.png)
+![Training logs](images/training.PNG)
 
-![Score evolution during the training](./images/scores.png)
+![Score evolution during the training](images/scores.PNG)
 
 **These results meets the project's expectation as the agent is able to receive an average reward (over 100 episodes) of at least +13, and in fewer than 500 episodes** (For context, Udacity's agent solved the project in fewer than 1800 episodes)
 
