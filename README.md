@@ -6,7 +6,7 @@
 
 ### Summary
 
-In this project, I use a Deep Q-learning approach to train an agent to navigate and collect bananas in a large, square world. My final model includes a neural network to estimate action-values, and subsequently determine an optimal policy. My approach included both an Experience Replay Buffer and Fixed-Q Targets.
+In this project, I utilized Deep Reinforcement Learning to train an agent to navigate a virtual world while collecting as many yellow bananas as possible, while avoiding any blue bananas. I implemented the Q-Learning algorithm while using a deep neural network for Q-table approximation and I implemented an experience replay buffer with a fixed Q targets approach. The agent was able to reach an average score of +13 over 100 consecutive episodes by episode 491.
 
 Please see my final Project Report [here](Report.md).
 
